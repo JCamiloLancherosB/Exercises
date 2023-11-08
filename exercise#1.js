@@ -61,33 +61,19 @@ const cuenta = (string) => {
                 cuenta(element);
                 // cuenta(values.shift(element));
             }
-        })        
-        
-        // if(values.length === 0) {
-        //     console.log(values.length)
-        //     console.log(count)
-        //     // return count 
-        // }
-        // contadorKeys = count;
-        // console.log(contadorKeys)
-        // // count = 0
-        // console.log(contadorFinal)
-        // return count;
+        })
     }
-    // if(typeof string !== "object") {
-    return count
-    // }
-    // console.log(count)
-    // contadorKeys = count;
-    // // count = 0;
-    // console.log(contadorKeys)
-    // return contadorKeys
+    
+    contadorKeys = count;
+    count = 0;
+    console.log(contadorKeys)
+    return contadorKeys
 }
 
 // console.log(cuenta("obj"))
 // console.log(cuenta({obj: "value1"}))
 console.log(cuenta({obj:{key1:"value1",key2:"value2"},obj2:{key2:"value3"}}))
-// console.log(cuenta({obj:{key1:"value1",key2:"value2"},obj2:{key2:"value2"}}))
+console.log(cuenta({obj:{key1:"value1",key2:"value2"},obj2:{key2:"value2"}}))
 
 //Agregar variable para poder reestablecer el contador inicial sobre el cual trabajamos durante toda la función y poder volver llamar la función sin guardar valores anteriores
 
